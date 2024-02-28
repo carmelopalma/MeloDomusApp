@@ -1,0 +1,27 @@
+dispositivi:
+  - id: "/soggiorno/homeplug-001"
+    imageUrl: "assets/LampadinaAccesa.jpg"
+    position:
+      top: "20%"
+      left: "50%"
+    status: 1
+
+  - id: "/soggiorno/homeplug-002"
+    imageUrl: "assets/LampadinaSpenta.jpg"
+    position:
+      top: "50%"
+      left: "50%"
+    status: 0
+  - id: "/soggiorno/homeplug-003"
+    imageUrl: "assets/LampadinaAccesa.jpg"
+    position:
+      top: "20%"
+      left: "20%"
+    status: 1
+
+  - id: "/soggiorno/homeplug-004"
+    imageUrl: "assets/LampadinaSpenta.jpg"
+    position:
+      top: "50%"
+      left: "20%"
+    status: 0

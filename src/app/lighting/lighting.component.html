@@ -1,0 +1,20 @@
+<!-- lighting.component.html -->
+<input type="checkbox" id="exampleCheckbox" [(ngModel)]="dragEnabled" (change)="ondragEnabledChange()">
+<label for="exampleCheckbox">abilita spostamento dispositivi</label>
+  <div class="image-container">
+    <img src="../../assets/casa.jpg" alt="Piantina Casa" class="pianta">
+    <button *ngFor="let dispositivo of dispositivi" 
+            [id]="dispositivo.id"
+            [attr.data-id]="dispositivo.id"
+            [ngClass]="dispositivo.deviceType"
+            (mousedown)="startDrag($event, dispositivo.id)"
+            [ngStyle]="{'position': 'absolute', 
+                        'top': dispositivo.position.top + 'px', 
+                        'left': dispositivo.position.left + 'px',
+                        'transform': 'rotate(' + dispositivo.rotate + 'deg)'
+                        }">
+      <img [src]="imgDevice(dispositivo)" alt="{{imgDevice(dispositivo)}}" class="deviceimg">
+    </button>
+  </div>
+
+

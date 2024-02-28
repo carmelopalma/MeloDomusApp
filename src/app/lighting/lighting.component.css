@@ -1,0 +1,45 @@
+.pianta {
+top:0px;
+left:0px;
+position: absolute;
+}
+.image-container {  
+  position: relative;  
+  width: 300px;
+  height: 300px;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* background-image: url('../../assets/casa.jpg'); 
+  background-size: cover;
+  background-position: center;  */
+}
+
+
+.lampadina, .presa, .deviceOnOff {
+  border: none; /* Rimuove il bordo del bottone */
+  background: none; /* Rimuove lo sfondo del bottone per renderlo trasparente */
+  padding: 0; /* Rimuove il padding per evitare spazi extra intorno all'immagine */
+  cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+  width: 30px; /* Imposta la larghezza del bottone come percentuale del suo contenitore */
+  height: auto; /* Mantiene il rapporto d'aspetto basato sull'immagine interna */
+  position: absolute;
+
+}
+.deviceimg {
+  width: 100%; /* Imposta la larghezza dell'immagine al 100% del suo contenitore (il bottone) */
+  height: auto; /* Mantiene il rapporto d'aspetto dell'immagine */
+}
+
+.rilevatorePresenza {
+  border: none; /* Rimuove il bordo del bottone */
+  background: none; /* Rimuove lo sfondo del bottone per renderlo trasparente */
+  padding: 0; /* Rimuove il padding per evitare spazi extra intorno all'immagine */
+  cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+  width: 70px; /* Imposta la larghezza del bottone come percentuale del suo contenitore */
+  height: auto; /* Mantiene il rapporto d'aspetto basato sull'immagine interna */
+  position: absolute;
+  
+}
